@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>School Attendance System - Login</title>
+        <link rel="stylesheet" href="../CSS/style.css" />
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div class="login-card">
+                <div class="logo-box">
+                    <div class="logo-icon">🎓</div>
+                </div>
+
+                <h1>School Attendance System
+                    <p class="subtitle">Digital platform for attendance management</p>
+                </h1>
+                <form id="loginForm" novalidate>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="your.email@school.edu"
+                            autocomplete="off"
+                        />
+                        <small class="error-message" id="emailError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Select Role</label>
+                        <div class="role-container">
+                            <div class="role-card active" data-role="Teacher" id="teacherRole">
+                                <h3>Teacher</h3>
+                                <p>Mark attendance</p>
+                            </div>
+
+                            <div class="role-card" data-role="Admin" id="adminRole">
+                                <h3>Admin</h3>
+                                <p>Full access</p>
+                            </div>
+                        </div>
+                        <small class="error-message" id="roleError"></small>
+                    </div>
+
+                    <input type="hidden" id="selectedRole" value="Teacher" />
+
+                    <button type="submit" class="login-btn">Login to System</button>
+
+                    <p class="status-message" id="statusMessage"></p>
+                </form>
+
+                <div class="divider"></div>
+
+                <div class="demo-credentials">
+                    <h4>Demo Credentials</h4>
+                    <p>Admin: admin@school.edu</p>
+                    <p>Teacher: john.t@school.edu</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="../JS/script.js"></script>
+    </body>
+</html>

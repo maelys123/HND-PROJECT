@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students - School Attendance</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <div class="app-logo">🏫</div>
+          <div class="app-name">School Attendance</div>
+        </div>
+        <nav class="nav">
+          <a href="dashboard.html" class="nav-item">Dashboard</a>
+          <a href="mark.html" class="nav-item">Mark Attendance</a>
+          <a href="history.html" class="nav-item">Attendance History</a>
+          <a href="students.html" class="nav-item active">Students</a>
+          <a href="reports.html" class="nav-item">Reports</a>
+          <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="topbar-left">
+            <h1 class="dashboard-title">Students</h1>
+            <div class="top-sub">Manage student information and records</div>
+          </div>
+          <div class="topbar-right">
+            <div class="user-info">francky<br /><small>Teacher • 3/9/2026</small></div>
+            <button class="add-btn">+ Add Student</button>
+          </div>
+        </header>
+
+        <section class="content-grid">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-label">Total Students</div>
+              <div class="stat-number">10</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Male Students</div>
+              <div class="stat-number" style="color:#2563eb">5</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Female Students</div>
+              <div class="stat-number" style="color:#ec4899">5</div>
+            </div>
+          </div>
+
+          <div class="dashboard-section students-section">
+            <div class="section-header">
+              <div>
+                <h2 class="section-title">Student List</h2>
+                <div class="section-sub">Total: 10 students</div>
+              </div>
+              <div class="search-wrap">
+                <input type="search" class="search-input" placeholder="Search students..." />
+              </div>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Roll No.</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Class</th>
+                  <th>Parent Phone</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>001</td>
+                  <td>Emma Johnson</td>
+                  <td>emma.j@school.edu</td>
+                  <td>Grade 10 A</td>
+                  <td>555-1001</td>
+                  <td><button class="action-icon">✏️</button> <button class="action-icon delete">🗑️</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <nav class="bottom-nav" role="navigation" aria-label="Mobile navigation">
+      <a href="dashboard.html" class="bottom-item"><div class="icon">🏠</div><div class="label">Dashboard</div></a>
+      <a href="mark.html" class="bottom-item"><div class="icon">📝</div><div class="label">Mark</div></a>
+      <a href="students.html" class="bottom-item active"><div class="icon">👥</div><div class="label">Students</div></a>
+      <a href="reports.html" class="bottom-item"><div class="icon">📊</div><div class="label">Reports</div></a>
+      <a href="profile.html" class="bottom-item"><div class="icon">⚙️</div><div class="label">Profile</div></a>
+    </nav>
+  </body>
+</html>
